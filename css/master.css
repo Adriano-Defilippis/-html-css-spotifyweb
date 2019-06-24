@@ -4,10 +4,11 @@
 }
 
 body{
-  font-size: 40px;
+  /* font-size: 40px; */
 }
 
 
+/* Regole Layout */
 .wrapper{
   width: 100vw;
   height: 100vh;
@@ -28,7 +29,8 @@ body{
 #col-left{
   width: 200px;
   height: 100%;
-  background: coral;
+  background: black;
+  color: white;
   float: left;
 }
 
@@ -39,4 +41,14 @@ body{
   float: left;
   overflow: auto;
 
+}
+
+/* Regole nav destra */
+
+#col-left ul li {
+  list-style: none;
+}
+
+#col-left ul li h4 {
+  display: inline-block;
 }
