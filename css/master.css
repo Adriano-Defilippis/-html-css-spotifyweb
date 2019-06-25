@@ -4,9 +4,20 @@
 }
 
 body{
-  /* font-size: 40px; */
+  color: white;
 }
 
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+.container-flex{
+  max-width: 200px;
+  display: flex;
+  justify-content: flex-start;
+
+
+}
 
 /* Regole Layout */
 .wrapper{
@@ -23,15 +34,17 @@ body{
 #section-two{
   width: 100%;
   height: 100px;
-  background: yellowgreen;
+  background: #282828;
 }
 
 #col-left{
   width: 200px;
   height: 100%;
   background: black;
-  color: white;
   float: left;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
 }
 
 #col-right{
@@ -51,4 +64,13 @@ body{
 
 #col-left ul li h4 {
   display: inline-block;
+}
+
+#col-left div:last-child {
+  align-self: flex-end;
+
+}
+
+#col-left img {
+  max-width: 100%;
 }
