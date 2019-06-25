@@ -107,7 +107,6 @@ body ul li {
 /* Regole per griglia immagini album e titolo */
 #col-right .music{
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 
 
@@ -115,7 +114,7 @@ body ul li {
 
 #col-right .music-items{
   flex-grow: 1;
-  min-width: 100px;
+  margin-right: 1%;
   max-width: 200px;
 
 }
@@ -136,10 +135,23 @@ body ul li {
   #col-right{
     width: calc(100% - 50px);
   }
+
+
+
+  #sezione_1 .my-container .music .hide_md{
+    display: none;
+  }
+
+  .hide_sm{
+    display: none;
+  }
+
+
 }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 767px) {
+
   #col-left{
     width: 50px;
   }
@@ -147,6 +159,11 @@ body ul li {
   #col-right{
     width: calc(100% - 50px);
   }
+
+  .hide_md{
+    display: none;
+  }
+
  }
 
 
