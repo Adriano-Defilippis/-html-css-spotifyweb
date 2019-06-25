@@ -106,14 +106,75 @@ body ul li {
 }
 
 #col-right .music-item {
-  min-width: 100px;
-  max-width: 150px;
+  width: 150px;
+  /* max-width: 200px; */
   height: auto;
 }
 
 #col-right .music-item img {
   width: 100%;
   height: auto;
+}
+
+/* Media Query per Warap immagini */
+
+@media only screen and (max-width: 320px){
+  #col-left{
+    width: 50px;
+  }
+
+
+  #col-right{
+    width: calc(100% - 50px);
+  }
+
+  #col-right .music-item{
+    flex-grow: 0;
+    flex-wrap: nowrap;
+  }
+}
+
+@media only screen and (min-width:321px) and (max-width:481px){
+  #col-left{
+    width: 50px;
+    overflow: hidden;
+  }
+
+  #col-right{
+    width: calc(100% - 50px);
+  }
+
+
+  #col-right .music-item{
+    flex-grow: 1;
+    flex-wrap: nowrap;
+  }
+}
+
+@media only screen and (min-width:482px) and (max-width : 768px) {
+
+  #col-right{
+    width: calc(100% - 50px);
+    overflow: hidden;
+  }
+
+  #col-left{
+    width: 50px;
+  }
+
+
+  #col-right .music-item{
+    flex-grow: 0;
+    flex-wrap: nowrap;
+  }
+}
+
+@media only screen and (min-width:769px){
+  #col-right .music-item{
+    flex-grow: 0;
+    flex-wrap: nowrap;
+  }
+
 }
 
 
