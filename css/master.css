@@ -19,6 +19,7 @@ body{
   text-align: center;
 }
 
+
 body ul li {
   list-style: none;
 }
@@ -40,6 +41,7 @@ body ul li {
 
 .flex-between{
   display: flex;
+  justify-content: space-between;
 }
 
 .title-box{
@@ -64,13 +66,17 @@ body ul li {
 /* Regole nav sinistra */
 #col-left{
   width: 250px;
-  height: auto;
+  height: 100%;
   background: black;
   float: left;
   display: flex;
   flex-direction: column;
-  overflow: auto;
 }
+
+#col-left .hidden-lg img {
+  display: none;
+}
+
 
 #col-left ul li h4 {
   display: inline-block;
@@ -96,17 +102,30 @@ body ul li {
 }
 
 #col-right #nav-content ul{
-  max-width: 80%;
+  /* max-width: 80%; */
   margin: auto;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
+#col-right #hamburgher{
+  visibility: hidden;
+  padding: 2% 0;
+}
+
+
 /* Regole per griglia immagini album e titolo */
-#col-right .music-item{
-  min-width: 100px;
-  max-width: 200px;
+#col-right .music{
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+#col-right .music-items{
+  margin-right: 1%;
+  max-width: 150px;
 
 }
 
@@ -123,22 +142,46 @@ body ul li {
     width: 50px;
   }
 
+  #col-left nav ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+
+  #col-left .hidden-xs img {
+    display: none;
+  }
+
+  #col-left .hidden-lg img {
+    display: inline-block;
+  }
+
+
+  #col-left nav h4,
+  #col-left #crono-musica{
+    display: none;
+  }
+
   #col-right{
     width: calc(100% - 50px);
   }
 
-  #col-right .music-item{
-    width: 50%;
-    height: auto;
 
+  #col-right #hamburgher{
+    visibility: visible;
   }
 
-
-  #col-right .row .hide_md{
+  .display-none{
     display: none;
   }
 
-  #col-right .row .hide_sm{
+  .my-container .music .hide_md{
+    display: none;
+  }
+
+  .hide_sm{
     display: none;
   }
 
@@ -152,13 +195,41 @@ body ul li {
     width: 50px;
   }
 
+  #col-left nav ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+
+  #col-left .hidden-xs img {
+    display: none;
+  }
+
+  #col-left .hidden-lg img {
+    display: inline-block;
+  }
+
+
+  #col-left nav h4,
+  #col-left #crono-musica{
+    visibility: hidden;
+  }
+
+
+
   #col-right{
     width: calc(100% - 50px);
   }
 
-  #col-right .row .hide_md{
+  #col-right #nav-content{
     display: none;
   }
+  #col-right #hamburgher{
+    visibility: visible;
+  }
+
 
  }
 
