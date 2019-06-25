@@ -45,12 +45,13 @@ body{
   display: flex;
   flex-direction: column;
   overflow: auto;
+  position: relative;
 }
 
 #col-right{
   width: calc(100% - 200px);
   height: 100%;
-  background: red;
+  background-image: linear-gradient(to bottom right, #344651, #0A0D0F);
   float: left;
   overflow: auto;
 
@@ -67,10 +68,35 @@ body{
 }
 
 #col-left div:last-child {
-  align-self: flex-end;
+  align-items: flex-end;
 
 }
 
 #col-left img {
   max-width: 100%;
+}
+
+
+
+
+
+
+
+
+/* Regole per la Section del Player */
+#section-two{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#section-two .title-song{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+#section-two .play-now img{
+  max-width: 60px;
+  height: 60px;
 }
