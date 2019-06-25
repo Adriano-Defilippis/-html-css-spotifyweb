@@ -31,7 +31,7 @@ body ul li {
   background: grey;
 }
 
-.container{
+.my-container{
   height: 100%;
   max-width: 95%;
   min-width: 90%;
@@ -41,7 +41,7 @@ body ul li {
 .title-box{
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   padding: 2% 0;
 }
 
@@ -81,6 +81,7 @@ body ul li {
   max-width: 100%;
 }
 
+
 /* Regole per il corpo principale di pagina */
 #col-right{
   width: calc(100% - 250px);
@@ -99,83 +100,31 @@ body ul li {
 }
 
 /* Regole per griglia immagini album e titolo */
-.music{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
 #col-right .music-item {
-  width: 150px;
+  min-width: 150px;
   /* max-width: 200px; */
   height: auto;
 }
 
-#col-right .music-item img {
+#col-right img {
   width: 100%;
   height: auto;
 }
 
-/* Media Query per Warap immagini */
+/* Responsive colonne */
 
-@media only screen and (max-width: 320px){
+/* Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 575.98px) {
   #col-left{
     width: 50px;
-  }
-
-
-  #col-right{
-    width: calc(100% - 50px);
-  }
-
-  #col-right .music-item{
-    flex-grow: 0;
-    flex-wrap: nowrap;
-  }
-}
-
-@media only screen and (min-width:321px) and (max-width:481px){
-  #col-left{
-    width: 50px;
-    overflow: hidden;
   }
 
   #col-right{
     width: calc(100% - 50px);
   }
-
-
-  #col-right .music-item{
-    flex-grow: 1;
-    flex-wrap: nowrap;
-  }
 }
 
-@media only screen and (min-width:482px) and (max-width : 768px) {
-
-  #col-right{
-    width: calc(100% - 50px);
-    overflow: hidden;
-  }
-
-  #col-left{
-    width: 50px;
-  }
-
-
-  #col-right .music-item{
-    flex-grow: 0;
-    flex-wrap: nowrap;
-  }
-}
-
-@media only screen and (min-width:769px){
-  #col-right .music-item{
-    flex-grow: 0;
-    flex-wrap: nowrap;
-  }
-
-}
 
 
 /* Regole per la Section del Player */
