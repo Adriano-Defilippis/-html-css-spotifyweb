@@ -11,10 +11,13 @@ body{
   text-transform: uppercase;
 }
 
-.container-flex{
-  max-width: 200px;
+.container{
+  height: 100%;
+  border: 2px solid white;
+  max-width: 95%;
+  min-width: 90%;
+  margin: auto;
   display: flex;
-  justify-content: flex-start;
 
 
 }
@@ -38,26 +41,25 @@ body{
 }
 
 #col-left{
-  width: 200px;
+  width: 250px;
   height: 100%;
   background: black;
   float: left;
   display: flex;
   flex-direction: column;
   overflow: auto;
-  position: relative;
 }
 
 #col-right{
-  width: calc(100% - 200px);
+  width: calc(100% - 250px);
   height: 100%;
-  background-image: linear-gradient(to bottom right, #344651, #0A0D0F);
+  background-image: linear-gradient(to bottom right, #203153, #0A0D0F);
   float: left;
   overflow: auto;
 
 }
 
-/* Regole nav destra */
+/* Regole nav sinistra */
 
 #col-left ul li {
   list-style: none;
@@ -85,17 +87,18 @@ body{
 
 /* Regole per la Section del Player */
 #section-two{
+  font-size: 14px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-#section-two{
-  overflow-x: auto;
-}
-
-#section-two .play-now{
+#section-two .play-now,
+#section-two .audio-control{
+  width: 300px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #section-two .play-now img{
@@ -103,7 +106,34 @@ body{
   height: 60px;
 }
 
-#section-two .album,
+#section-two .music-player{
+  width: 40%;
+  height: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#section-two .player-controls{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+/* #section-two .play-now{
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+} */
+
+
+/* Centro tutti i figli in verticale  */
+/* #section-two .album,
 #section-two .title-song,
 #section-two .add-pref,
 #section-two .music-player,
@@ -111,20 +141,22 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
+ */
 
 /* Bottoni */
-#section-two .music-player{
-  width: 25%;
+/* #section-two .music-player{
+  width: 40%;
   display: flex;
 
-}
+
+} */
 
 /* Barra Player */
-#section-two .player-controls{
-  width: 200px;
+/* #section-two .player-controls{
+  width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-self: center;
-}
+  flex-basis: auto;
+} */
