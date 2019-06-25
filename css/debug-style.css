@@ -105,7 +105,16 @@ body ul li {
 }
 
 /* Regole per griglia immagini album e titolo */
-#col-right [class*="col-"]{
+#col-right .music{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+
+}
+
+#col-right .music-items{
+  flex-grow: 1;
   min-width: 100px;
   max-width: 200px;
 
