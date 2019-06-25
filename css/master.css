@@ -11,22 +11,38 @@ body{
   text-transform: uppercase;
 }
 
-.container{
-  height: 100%;
-  border: 2px solid white;
-  max-width: 95%;
-  min-width: 90%;
-  margin: auto;
-  display: flex;
-
-
+.capitalize{
+  text-transform: capitalize;
 }
+
+.text-center{
+  text-align: center;
+}
+
+body ul li {
+  list-style: none;
+}
+
 
 /* Regole Layout */
 .wrapper{
   width: 100vw;
   height: 100vh;
   background: grey;
+}
+
+.container{
+  height: 100%;
+  max-width: 95%;
+  min-width: 90%;
+  margin: auto;
+}
+
+.title-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 2% 0;
 }
 
 #section-one{
@@ -40,29 +56,16 @@ body{
   background: #282828;
 }
 
+
+/* Regole nav sinistra */
 #col-left{
   width: 250px;
-  height: 100%;
+  height: auto;
   background: black;
   float: left;
   display: flex;
   flex-direction: column;
   overflow: auto;
-}
-
-#col-right{
-  width: calc(100% - 250px);
-  height: 100%;
-  background-image: linear-gradient(to bottom right, #203153, #0A0D0F);
-  float: left;
-  overflow: auto;
-
-}
-
-/* Regole nav sinistra */
-
-#col-left ul li {
-  list-style: none;
 }
 
 #col-left ul li h4 {
@@ -78,11 +81,40 @@ body{
   max-width: 100%;
 }
 
+/* Regole per il corpo principale di pagina */
+#col-right{
+  width: calc(100% - 250px);
+  max-height: 100%;
+  background-image: linear-gradient(to bottom right, #27592E, #0A0D0F);
+  float: left;
+  overflow: auto;
+}
 
+#col-right #nav-content ul{
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
+/* Regole per griglia immagini album e titolo */
+.music{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+#col-right .music-item {
+  min-width: 100px;
+  max-width: 150px;
+  height: auto;
+}
 
-
+#col-right .music-item img {
+  width: 100%;
+  height: auto;
+}
 
 
 /* Regole per la Section del Player */
@@ -122,41 +154,3 @@ body{
   align-items: center;
   justify-content: space-around;
 }
-
-
-
-/* #section-two .play-now{
-  width: 250px;
-  display: flex;
-  justify-content: space-around;
-} */
-
-
-/* Centro tutti i figli in verticale  */
-/* #section-two .album,
-#section-two .title-song,
-#section-two .add-pref,
-#section-two .music-player,
-#section-two .audio-control {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
- */
-
-/* Bottoni */
-/* #section-two .music-player{
-  width: 40%;
-  display: flex;
-
-
-} */
-
-/* Barra Player */
-/* #section-two .player-controls{
-  width: 80%;
-  display: flex;
-  justify-content: space-around;
-  align-self: center;
-  flex-basis: auto;
-} */
