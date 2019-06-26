@@ -132,9 +132,8 @@ body ul li {
 }
 
 #col-right .music-items{
-  width: 200px;
+  width: calc(100% / 7);
   margin-right: 1%;
-  max-width: 150px;
 }
 
 .hover-bgc{
@@ -234,6 +233,11 @@ body ul li {
     visibility: visible;
   }
 
+  #col-right .music-items{
+    width: 45%;
+  }
+
+
   .display-none{
     display: none;
   }
@@ -264,7 +268,7 @@ body ul li {
 }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 768px) {
+@media(max-width: 768px) {
 
   #col-left{
     width: 50px;
@@ -297,6 +301,12 @@ body ul li {
   #col-right{
     width: calc(100% - 50px);
   }
+
+  #col-right .music-items{
+    width: calc(100% / 5);
+    margin-right: 3%;
+  }
+
 
   #col-right #nav-content{
     display: none;
