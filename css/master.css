@@ -133,13 +133,13 @@ body ul li {
   margin: auto;
   display: flex;
   justify-content: space-around;
-  padding-top: 2%;
+  padding: 25px;
   flex-wrap: wrap;
 }
 
 #col-right #hamburgher{
   visibility: hidden;
-  padding: 25px 20px;
+  padding: 25px 2%;
 }
 
 
