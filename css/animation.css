@@ -23,7 +23,7 @@
   background: black;
 }
 
-
+/* Effetti sul Play che appare all'hover */
 .opacity-black i{
   transition: 1s;
 }
@@ -33,13 +33,24 @@
   transform: scale(0.5);
 }
 
+/* Bordo che appare sotto le voci di menu */
 .border-hover{
   width: 80%;
   height: 0.2rem;
   margin: 0 auto;
   visibility: hidden;
+  transition: 0.5;
 }
 
 li:hover .border-hover{
   visibility: visible;
+}
+
+i, li{
+  transition: 0.5s;
+}
+
+i:hover,
+li:hover{
+  color: grey;
 }
