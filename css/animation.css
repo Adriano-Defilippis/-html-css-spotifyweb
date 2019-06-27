@@ -1,0 +1,8 @@
+.opacity-black i{
+  transition: 1s;
+}
+
+.opacity-black i:hover{
+  color: red;
+  transform: scale(0.5);
+}
