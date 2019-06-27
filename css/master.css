@@ -4,8 +4,18 @@
 }
 
 body{
-  font-family: "Source Sans Pro", "Arial";
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
   color: white;
+}
+
+body p{
+  font-style: thin;
+}
+
+body ul li {
+  list-style: none;
 }
 
 .text-uppercase{
@@ -20,18 +30,15 @@ body{
   text-align: center;
 }
 
-.mt-neg-20px{
-  margin-top: -20px;
-}
 
 .p-relative{
   position: relative;
 }
 
-
-body ul li {
-  list-style: none;
+.ml-5px{
+  margin-left: 5px;
 }
+
 
 
 /* Regole Layout */
@@ -49,11 +56,19 @@ body ul li {
 }
 
 .container-leftbar{
-  max-width: 90%;
+  max-width: 80%;
+  margin: 0 auto;
   height: 100%;
-  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 
 }
+
+.flex-item-end{
+  align-self: flex-end;
+}
+
 
 
 .title-box{
@@ -62,6 +77,15 @@ body ul li {
   align-items: center;
   padding-bottom: 10px;
 }
+
+.title-box h1{
+  font-size: 2rem;
+}
+
+/* .title-box p{
+  font-weight: lighter;
+} */
+
 
 .flex-nav-list{
   display: flex;
@@ -91,39 +115,48 @@ body ul li {
 
 /* Regole nav sinistra */
 #col-left{
+  font-weight: lighter;
   width: 250px;
   height: 100%;
   background: black;
   float: left;
-  display: flex;
-  flex-direction: column;
+
 }
+
+#col-left .logo-size{
+  width: 100%;
+  height: auto;
+}
+
+#col-left .logo-size img{
+  width: 80%;
+  height: auto;
+}
+
 
 #col-left .hidden-lg img {
   display: none;
 }
 
-#col-left .logo-size {
-  max-width: 60%;
-  margin: auto 0;
-  margin-bottom: 20px;
-
-}
 
 
 #col-left ul li h4 {
   display: inline-block;
 }
 
-#col-left div:last-child {
-  align-items: flex-end;
-
+#col-left #profile{
+  width: 200px;
+  position: absolute;
+  bottom: 100px;
 }
 
-#col-left img {
-  max-width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+#col-left #profile .download-app,
+#col-left #profile .user-id{
+  width: 80%;
+  padding: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 
@@ -147,7 +180,7 @@ body ul li {
 
 #col-right #hamburgher{
   display: none;
-  padding: 25px 2%;
+  padding: 30px 2%;
 }
 
 #col-right #hamburgher ul{
@@ -222,7 +255,7 @@ body ul li {
 #col-right img {
   width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: -5px;
 }
 
 
@@ -290,6 +323,18 @@ body ul li {
 
 /* Small devices (landscape phones, less than 768px) */
 @media(max-width: 768px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  body .title-box h1{
+    font-size: 1.5em;
+  }
+
+  body .title-box p  {
+    font-size: 0.8em;
+  }
 
   #col-left{
     width: 50px;
@@ -361,6 +406,10 @@ body ul li {
 
  /* Extra small devices (portrait phones, less than 576px) */
  @media screen and (max-width: 575.98px) {
+   body{
+     font-size: 14px;
+   }
+
    #col-left{
      width: 50px;
    }
