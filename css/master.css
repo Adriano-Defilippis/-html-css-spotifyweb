@@ -152,6 +152,14 @@ body ul li {
   box-sizing: inherit;
 }
 
+#col-right #hamburgher:hover ul{
+  position: absolute;
+  z-index: 1;
+  display: block;
+  background-color: #282828;
+}
+
+
 #col-right #hamburgher li{
   padding: 4%;
   font-size: 12px;
@@ -268,8 +276,29 @@ body ul li {
 
 
 
-/* Responsive colonne */
+/* Responsive  */
 
+/* Large device */
+@media(max-width: 1024px) {
+  #col-right .music-items{
+    width: calc(100% / 4);
+    margin-right: 1%;
+  }
+
+
+  #col-right #nav-content{
+    display: none;
+  }
+
+  #col-right #hamburgher{
+    display:inline-block;
+  }
+
+  #section-two #audio-control input{
+    display: none;
+  }
+
+}
 
 /* Small devices (landscape phones, less than 768px) */
 @media(max-width: 768px) {
@@ -320,10 +349,6 @@ body ul li {
     display:inline-block;
   }
 
-  #col-right #hamburgher:hover ul{
-    display: block;
-    background-color: #282828;
-  }
 
   #section-two .play-now,
   #section-two #audio-control{
@@ -381,6 +406,10 @@ body ul li {
 
    #col-right #hamburgher{
      visibility: visible;
+   }
+
+   .title-box p{
+     display: none;
    }
 
    #col-right .music-items{
