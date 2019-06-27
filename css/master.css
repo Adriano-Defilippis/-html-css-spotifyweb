@@ -138,8 +138,20 @@ body ul li {
 }
 
 #col-right #hamburgher{
-  visibility: hidden;
+  display: none;
   padding: 25px 2%;
+}
+
+#col-right #hamburgher ul{
+  display: none;
+  width: 200px;
+  box-sizing: inherit;
+}
+
+#col-right #hamburgher li{
+  padding: 4%;
+  font-size: 12px;
+  font-weight: lighter;
 }
 
 
@@ -262,8 +274,14 @@ body ul li {
   #col-right #nav-content{
     display: none;
   }
+
   #col-right #hamburgher{
-    visibility: visible;
+    display:inline-block;
+  }
+
+  #col-right #hamburgher:hover ul{
+    display: block;
+    background-color: #282828;
   }
 
   #section-two .play-now,
