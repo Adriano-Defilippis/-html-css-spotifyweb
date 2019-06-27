@@ -23,6 +23,10 @@ body{
   margin-top: -20px;
 }
 
+.p-relative{
+  position: relative;
+}
+
 
 body ul li {
   list-style: none;
@@ -168,6 +172,43 @@ body ul li {
   margin-right: 1%;
 }
 
+#col-right .music-items .hover-play-song {
+  position:relative;
+  width: 100%;
+}
+
+#col-right .show-onHover   {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#col-right .hover-play-song:hover .show-onHover   {
+  display: inline-block;
+}
+
+#col-right .show-onHover i:hover   {
+}
+
+
+
+.opacity-black{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 3;
+  opacity: 0.6;
+}
+
+#col-right .show-onHover  .opacity-black i {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 .hover-bgc{
   visibility: hidden;
 }
@@ -180,7 +221,7 @@ body ul li {
 
 
 #col-right img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
