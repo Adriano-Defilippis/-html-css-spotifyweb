@@ -1,1 +1,1 @@
-getElementById("username").innerHtml="<p>Username widh java";
+document.getElementById('username').innerHTML='<p>Username widh java</p>';

@@ -159,6 +159,12 @@ body ul li {
   justify-content: space-between;
 }
 
+#col-left #profile #username p{
+  font-size: 12px;
+  font-weight: lighter;
+  margin: 0 auto;
+}
+
 
 /* Regole per il corpo principale di pagina */
 #col-right{
@@ -322,7 +328,7 @@ body ul li {
 }
 
 /* Small devices (landscape phones, less than 768px) */
-@media(max-width: 768px) {
+@media(max-width: 813px) {
 
   body {
     font-size: 14px;
